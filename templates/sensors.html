@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <font size=12>
+	<p>溫度 {{ temp_data }}℃</p>
+    <img src="{{ url_for('images', datatype='temperature') }}" alt="Temperature Data">
+	<p>濕度 {{ hum_data }}%</p>
+    <img src="{{ url_for('images', datatype='humidity') }}" alt="Humidity Data">
+	</font>
+  </body>
+</html>
